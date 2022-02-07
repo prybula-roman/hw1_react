@@ -1,13 +1,6 @@
 import React from "react";
 
-export const Transaction=({trans})=>{
-return (
-
-
-
-
-    
-)
-
-
-}
+export const Transaction = ({ trans }) => {
+  // return (
+  // )
+};
