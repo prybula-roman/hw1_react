@@ -1,0 +1,10 @@
+.stats__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* max-width: 206px;
+  max-height: 44px; */
+  margin: 0 auto;
+  /*  */
+  outline: 1px solid red;
+}

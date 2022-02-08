@@ -1,0 +1,3 @@
+@import "./base/Body.module.css";
+@import "./base/_container.module.css";
+@import "./components/profile/CardItem.module.css";

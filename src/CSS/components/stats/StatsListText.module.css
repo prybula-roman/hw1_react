@@ -1,0 +1,8 @@
+.stats_text {
+  color: black;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  word-wrap: break-word;
+  margin-bottom: 16px;
+}
