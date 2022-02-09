@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hw1-react.git/static/css/main.6ca80046.css",
+    "main.js": "/hw1-react.git/static/js/main.2d9a94c7.js",
+    "static/js/787.8b5c04b8.chunk.js": "/hw1-react.git/static/js/787.8b5c04b8.chunk.js",
+    "index.html": "/hw1-react.git/index.html",
+    "main.6ca80046.css.map": "/hw1-react.git/static/css/main.6ca80046.css.map",
+    "main.2d9a94c7.js.map": "/hw1-react.git/static/js/main.2d9a94c7.js.map",
+    "787.8b5c04b8.chunk.js.map": "/hw1-react.git/static/js/787.8b5c04b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ca80046.css",
+    "static/js/main.2d9a94c7.js"
+  ]
+}
