@@ -1,0 +1,17 @@
+.is_online {
+  border-radius: 50%;
+  min-width: 25px;
+  min-height: 25px;
+  margin: auto;
+  /*  */
+  background-color: rgb(0, 255, 55);
+}
+
+.is_offline {
+  border-radius: 50%;
+  min-width: 25px;
+  min-height: 25px;
+  margin: auto;
+  /*  */
+  background-color: rgb(255, 0, 0);
+}
