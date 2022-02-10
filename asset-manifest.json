@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/prybula-roman/hw1_react.git/static/css/main.e44ab5bf.css",
-    "main.js": "/prybula-roman/hw1_react.git/static/js/main.b3ed9416.js",
-    "static/js/787.8b5c04b8.chunk.js": "/prybula-roman/hw1_react.git/static/js/787.8b5c04b8.chunk.js",
-    "index.html": "/prybula-roman/hw1_react.git/index.html",
-    "main.e44ab5bf.css.map": "/prybula-roman/hw1_react.git/static/css/main.e44ab5bf.css.map",
-    "main.b3ed9416.js.map": "/prybula-roman/hw1_react.git/static/js/main.b3ed9416.js.map",
-    "787.8b5c04b8.chunk.js.map": "/prybula-roman/hw1_react.git/static/js/787.8b5c04b8.chunk.js.map"
+    "main.css": "/hw1_react/static/css/main.e44ab5bf.css",
+    "main.js": "/hw1_react/static/js/main.1fe4eef7.js",
+    "static/js/787.8b5c04b8.chunk.js": "/hw1_react/static/js/787.8b5c04b8.chunk.js",
+    "index.html": "/hw1_react/index.html",
+    "main.e44ab5bf.css.map": "/hw1_react/static/css/main.e44ab5bf.css.map",
+    "main.1fe4eef7.js.map": "/hw1_react/static/js/main.1fe4eef7.js.map",
+    "787.8b5c04b8.chunk.js.map": "/hw1_react/static/js/787.8b5c04b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e44ab5bf.css",
-    "static/js/main.b3ed9416.js"
+    "static/js/main.1fe4eef7.js"
   ]
 }
