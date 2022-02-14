@@ -7,7 +7,6 @@ import statistic from "./JSON/statistic.json";
 import userFriends from "./JSON/friends.json";
 import transaction from "./JSON/transaction.json";
 import { FriendList } from "./components/friendlist/friendlist";
-import { Stats } from "./components/stats/stats";
 import { Statistic } from "./components/statistic/statistic";
 import { Transaction } from "./components/transaction/transaction";
 

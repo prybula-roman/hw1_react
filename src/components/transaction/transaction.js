@@ -5,7 +5,6 @@ export const Transaction = ({ trans }) => {
   const tableHeaderStyle = [headerStyle.table_header];
   const rowHeaderStyle = [headerStyle.table_header_row];
   const columnHeaderStyle = [headerStyle.table_header_column];
-  const rowStyle = [headerStyle.table_row_even];
   return (
     <table className="table table-transaction">
       <thead className={tableHeaderStyle}>

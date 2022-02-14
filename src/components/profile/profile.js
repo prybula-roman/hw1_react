@@ -1,7 +1,6 @@
 import React from "react";
 import { Stats } from "../stats/stats";
 import user from "../../JSON/user.json";
-import bodyStyle from "../../CSS/base/Body.module.css";
 import cardItemStyle from "../../CSS/components/profile/CardItem.module.css";
 import cardBoxStyle from "../../CSS/components/profile/CardBox.module.css";
 import cardImgStyle from "../../CSS/components/profile/CardImg.module.css";

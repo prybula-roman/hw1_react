@@ -4,6 +4,9 @@ import listFriendStyle from "../../CSS/components/friends/ListFriends.module.css
 import statsItemStyle from "../../CSS/components/stats/StatsListItem.module.css";
 import isOnline from "../../CSS/components/friends/IsOnline.module.css";
 import itemText from "../../CSS/components/friends/ItemText.module.css";
+import { FriendListItem } from "./friendlistitem";
+//import { friends } from "../../JSON/friends.json";
+
 export const FriendList = ({ friends } /*followers, views, likes*/) => {
   const listStyle = [listFriendStyle.friend_list];
   const itemStyle = [statsItemStyle.stats_list_item];
@@ -30,6 +33,7 @@ export const FriendList = ({ friends } /*followers, views, likes*/) => {
             </li>
           );
         })}
+        {/* <FriendListItem friends={friends} />; */}
       </ul>
     </div>
   );
