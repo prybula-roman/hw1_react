@@ -1,6 +1,7 @@
-import React from "react";
-// import basicStyle from "./basic.module.css";
+// import React from "react";
+import PropTypes from "prop-types";
 import headerStyle from "../../CSS/components/transaction/TableHeader.module.css";
+import { TransactionItem } from "./transactionItem";
 export const Transaction = ({ trans }) => {
   const tableHeaderStyle = [headerStyle.table_header];
   const rowHeaderStyle = [headerStyle.table_header_row];
@@ -14,29 +15,20 @@ export const Transaction = ({ trans }) => {
           <th className={columnHeaderStyle}>CURRENCY</th>
         </tr>
       </thead>
-      {/* <thead className={tableHeaderStyle}>
-        <tr className={rowHeaderStyle}>
-          <th className={columnHeaderStyle}>Type</th>
-        </tr>
-      </thead> */}
       <tbody className="table-tbody table-transaction-tbody">
-        {trans.map((elem, index) => {
-          return (
-            <tr
-              key={elem.id}
-              className={
-                index % 2 === 0
-                  ? headerStyle.table_row_odd
-                  : headerStyle.table_row_even
-              }
-            >
-              <td className={columnHeaderStyle}>{elem.type}</td>
-              <td className={columnHeaderStyle}>{elem.amount}</td>
-              <td className={columnHeaderStyle}>{elem.currency}</td>
-            </tr>
-          );
-        })}
+        <TransactionItem transactionList={trans} />
       </tbody>
     </table>
   );
+};
+
+Transaction.propTypes = {
+  trans: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      type: PropTypes.string,
+      amount: PropTypes.string,
+      currency: PropTypes.string,
+    })
+  ),
 };

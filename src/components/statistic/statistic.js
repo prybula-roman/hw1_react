@@ -1,33 +1,31 @@
 import React from "react";
+import PropTypes from "prop-types";
 import listStatisticStyle from "../../CSS/components/statistic/StatisticList.module.css";
-import statsItemStyle from "../../CSS/components/stats/StatsListItem.module.css";
-import statsItemText from "../../CSS/components/stats/StatsListText.module.css";
+import { StatisticItem } from "./statisticItem";
 
-export const Statistic = ({ statist } /*followers, views, likes*/) => {
+export const Statistic = ({ statist, title }) => {
   const listStyle = [listStatisticStyle.list_statistic];
-  const itemStyle = [statsItemStyle.stats_list_item];
-  const itemText = [statsItemText.stats_text];
-  const colorArr = ["blue", "purple", "red", "green", "yellow"];
   return (
     <div className="container">
-      <h2 className="h2 div-statistic-h2">Upload stats</h2>
+      {title.length === 0 ? (
+        <h2>"Upload Title"</h2>
+      ) : (
+        <h2 className="h2 div-statistic-h2">{title}</h2>
+      )}
       <ul className={listStyle}>
-        {statist.map((elem, index) => {
-          console.log("index=", index);
-          return (
-            <li
-              key={elem.id}
-              className={itemStyle}
-              style={{
-                backgroundColor: `${colorArr[index]}`,
-              }}
-            >
-              <span className={itemText}>{elem.label}</span>
-              <span className={itemText}>{elem.percentage}%</span>
-            </li>
-          );
-        })}
+        <StatisticItem items={statist} />
       </ul>
     </div>
   );
+};
+
+Statistic.propTypes = {
+  statist: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
+  title: PropTypes.string,
 };

@@ -1,5 +1,4 @@
 import "./App.css";
-// import style from "./CSS/main.module.css";
 import React from "react";
 import { Profile } from "./components/profile/profile";
 import user from "./JSON/user.json";
@@ -11,17 +10,13 @@ import { Statistic } from "./components/statistic/statistic";
 import { Transaction } from "./components/transaction/transaction";
 
 function App() {
+  const dataTitle = "my title statistic";
+  const friendListTitle = "my friends";
   return (
     <>
-      <Profile
-        avatar={user.avatar}
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-      />
-      {/* <Stats stats={user.stats} /> */}
-      <Statistic statist={statistic} />
-      <FriendList friends={userFriends} />
+      <Profile user={user} />
+      <Statistic statist={statistic} title={dataTitle} />
+      <FriendList friends={userFriends} title={friendListTitle} />
       <Transaction trans={transaction} />
     </>
   );
